@@ -1,0 +1,19 @@
+.example-card {
+    background-color: black;
+    color: white;
+    max-width: 400px;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.example-header-image {
+    background-image: url('../../assets/Res.jpg');
+    background-size: cover;
+}
+
+.example-paragraph {
+    font-size: 14px;
+    color: #666;
+}
+

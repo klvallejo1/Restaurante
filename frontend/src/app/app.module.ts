@@ -7,12 +7,15 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
