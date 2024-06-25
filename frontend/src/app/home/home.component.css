@@ -10,8 +10,8 @@
 
 .home{
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 81vh;
+    width: 90%;
     background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(../../assets/Pizza.jpg);
     background-size: cover;
     background-position: bottom center;

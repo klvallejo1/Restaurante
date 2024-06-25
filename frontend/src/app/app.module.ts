@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
+import { MenuResComponent } from './menu-res/menu-res.component';
+import { PedidoComponent } from './pedido/pedido.component';
+import { CalificarComponent } from './calificar/calificar.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { CardComponent } from './card/card.component';
     NavbarComponent,
     HomeComponent,
     CardComponent,
+    MenuResComponent,
+    PedidoComponent,
+    CalificarComponent,
   ],
   imports: [
     BrowserModule,
