@@ -4,7 +4,7 @@
     max-width: 400px;
     margin: 20px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
 }
 
 .example-header-image {
@@ -17,3 +17,15 @@
     color: #666;
 }
 
+
+.mat-card-image-container {
+    overflow: hidden;
+}
+
+.mat-card-image {
+    transition: transform 0.5s ease;
+}
+
+.mat-card:hover .mat-card-image {
+    transform: scale(1.1);
+}

@@ -1,9 +1,3 @@
-.imagenPrincipal {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -12,4 +6,49 @@
 
 .app-card {
     width: 300px;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(../../assets/Pizza.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    color: white;
+}
+
+.home-text h1{
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.home-text p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 3.5rem;
+    color: white;
+}
+
+.btn{
+    font-size: 1rem;
+}
+
+section{
+    padding: 1rem 5% 6rem;
 }
