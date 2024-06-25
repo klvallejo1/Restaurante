@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -11,10 +12,17 @@ export class CardComponent {
   @Input() descripcion: string = '';
   @Input() imageUrl: string = '';
 
-  constructor(){}
+  constructor(private router: Router){}
 
   cardClicked() {
-    console.log('Tarjeta clickeada!');
-    
+
+    if(this.titulo === 'NUESTRO MENÚ!'){
+      this.router.navigate(['/menu']);
+    }else if (this.titulo === 'ORDENA YÁ!'){
+      this.router.navigate(['/pedido'])
+    }else if (this.titulo === 'CALIFÍCA!'){
+      this.router.navigate(['/calificar']);
+    }
   }
+
 }

@@ -12,7 +12,6 @@ import { MenuResComponent } from './menu-res/menu-res.component';
 import { PedidoComponent } from './pedido/pedido.component';
 import { CalificarComponent } from './calificar/calificar.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
