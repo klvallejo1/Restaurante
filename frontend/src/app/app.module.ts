@@ -11,6 +11,7 @@ import { CardComponent } from './card/card.component';
 import { MenuResComponent } from './menu-res/menu-res.component';
 import { PedidoComponent } from './pedido/pedido.component';
 import { CalificarComponent } from './calificar/calificar.component';
+import { CardMenuComponent } from './card-menu/card-menu.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CalificarComponent } from './calificar/calificar.component';
     MenuResComponent,
     PedidoComponent,
     CalificarComponent,
+    CardMenuComponent,
   ],
   imports: [
     BrowserModule,

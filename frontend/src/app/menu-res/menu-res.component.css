@@ -42,3 +42,9 @@
 section {
     padding: 1rem 5% 6rem;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

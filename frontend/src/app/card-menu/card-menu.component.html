@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ titulo }}</mat-card-title>
+        <mat-card-subtitle>{{ descripcion }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="imageUrl" alt="Menu" class="mat-card-image">
+    <mat-card-content>
+        <p class="price">Precio: {{ precio }}</p>
+        <button mat-raised-button color="primary">Ordenar</button>
+    </mat-card-content>
+</mat-card>
