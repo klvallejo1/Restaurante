@@ -12,6 +12,10 @@ import { MenuResComponent } from './menu-res/menu-res.component';
 import { PedidoComponent } from './pedido/pedido.component';
 import { CalificarComponent } from './calificar/calificar.component';
 import { CardMenuComponent } from './card-menu/card-menu.component';
+import { FormularioMeseroComponent } from './formulario-mesero/formulario-mesero.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -23,11 +27,14 @@ import { CardMenuComponent } from './card-menu/card-menu.component';
     PedidoComponent,
     CalificarComponent,
     CardMenuComponent,
+    FormularioMeseroComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
   ],
   providers: [
     provideClientHydration(),

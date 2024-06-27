@@ -1,0 +1,49 @@
+<form class="rating-form" [formGroup]="ratingForm" (ngSubmit)="onSubmit()">
+    <!-- Selector de mesero -->
+    <mat-form-field appearance="fill">
+        <mat-label>Escoja su mesero</mat-label>
+        <mat-icon matPrefix>person</mat-icon>
+        <mat-select formControlName="mesero">
+            <mat-option *ngFor="let mesero of meseros" [value]="mesero">{{ mesero }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Selector de fecha -->
+    <mat-form-field appearance="fill">
+        <mat-label>Fecha en la que recibió la atención</mat-label>
+        <mat-icon matPrefix>event</mat-icon>
+        <input matInput [matDatepicker]="picker" formControlName="fecha">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-card-subtitle class="rating-title">
+        Califica a tu mesero según la experiencia recibida
+    </mat-card-subtitle>
+
+    <!-- Calificación -->
+    <div class="rating">
+        <label>
+            <input type="radio" formControlName="calificacion" value="1">
+            <mat-icon>sentiment_very_dissatisfied</mat-icon>
+        </label>
+        <label>
+            <input type="radio" formControlName="calificacion" value="2">
+            <mat-icon>sentiment_neutral</mat-icon>
+        </label>
+        <label>
+            <input type="radio" formControlName="calificacion" value="3">
+            <mat-icon>sentiment_very_satisfied</mat-icon>
+        </label>
+    </div>
+
+    <!-- Comentario -->
+    <mat-form-field appearance="fill">
+        <mat-label>Agrega un comentario</mat-label>
+        <mat-icon matPrefix>comment</mat-icon>
+        <textarea matInput formControlName="comentario"></textarea>
+    </mat-form-field>
+
+    <!-- Botón de enviar -->
+    <button mat-raised-button color="primary" type="submit">Enviar</button>
+</form>
