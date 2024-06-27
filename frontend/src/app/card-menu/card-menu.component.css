@@ -9,14 +9,11 @@
     background-color: black;
     color: white;
     width: 100%;
-    /* Asegura que la tarjeta ocupe el 100% de su celda */
     margin: 0;
-    /* Elimina el margen extra */
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Distribuye el espacio entre elementos */
 }
 
 .example-header-image {
@@ -47,4 +44,14 @@ mat-card-content {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+}
+
+.menu{
+    font-size: 3rem;
+}
+
+.price{
+    font-size: 1rem;
+    padding-top: 1rem;
+    font: bold;
 }
