@@ -7,12 +7,11 @@ import { MenuItem } from './models/menu-item.model';
   providedIn: 'root'
 })
 export class MenuServiceService {
-  private apiURL = 'http://localhost:5000/api/menu';
+  private apiUrl = 'http://localhost:5000/api/menu';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-
-  getMenu(): Observable<MenuItem[]>{
-    return this.http.get<MenuItem[]>(this.apiURL);
+  getMenu(): Observable<MenuItem[]> {
+    return this.http.get<MenuItem[]>(this.apiUrl);
   }
 }
