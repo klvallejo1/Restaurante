@@ -43,10 +43,10 @@ section {
     padding: 1rem 5% 6rem;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .text-menu{
