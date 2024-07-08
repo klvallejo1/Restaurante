@@ -1,28 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { MenuServiceService } from '../menu.service';
+import { MenuItem } from '../models/menu-item.model';
 
-interface Producto {
-  numero: number;
-  nombre: string;
-  cantidad: number;
-  disponibilidad: boolean;
-}
 
 @Component({
   selector: 'app-tabla-menu',
   templateUrl: './tabla-menu.component.html',
   styleUrl: './tabla-menu.component.css'
 })
-export class TablaMenuComponent implements OnInit{
-  displayedColumns: string[] = ['numero', 'nombre', 'cantidad', 'disponibilidad'];
-  dataSource = new MatTableDataSource<Producto>();
+
+export class TablaMenuComponent implements OnInit {
+  displayedColumns: string[] = ['number', 'name', 'description', 'price', 'quantity', 'availability'];
+  dataSource = new MatTableDataSource<MenuItem>();
+
+  constructor(private menuService: MenuServiceService) {}
 
   ngOnInit() {
-    const productos: Producto[] = [
-      {numero: 1, nombre: 'Producto A', cantidad: 10, disponibilidad: true},
-      {numero: 2, nombre: 'Producto B', cantidad: 5, disponibilidad: false},
-      {numero: 3, nombre: 'Producto C', cantidad: 15, disponibilidad: true},
-    ];
-    this.dataSource.data = productos;
+    this.menuService.getMenu().subscribe((data: MenuItem[]) => {
+      this.dataSource.data = data;
+    });
   }
 }

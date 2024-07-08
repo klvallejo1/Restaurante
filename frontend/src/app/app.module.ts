@@ -17,7 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormularioMenuComponent } from './formulario-menu/formulario-menu.component';
 import { TablaMenuComponent } from './tabla-menu/tabla-menu.component';
-
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,10 +39,12 @@ import { TablaMenuComponent } from './tabla-menu/tabla-menu.component';
     MaterialModule,
     ReactiveFormsModule,
     MatNativeDateModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })
