@@ -15,6 +15,8 @@ import { CardMenuComponent } from './card-menu/card-menu.component';
 import { FormularioMeseroComponent } from './formulario-mesero/formulario-mesero.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
+import { FormularioMenuComponent } from './formulario-menu/formulario-menu.component';
+import { TablaMenuComponent } from './tabla-menu/tabla-menu.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     CalificarComponent,
     CardMenuComponent,
     FormularioMeseroComponent,
+    FormularioMenuComponent,
+    TablaMenuComponent,
   ],
   imports: [
     BrowserModule,

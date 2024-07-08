@@ -44,7 +44,23 @@ section {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    max-width: 140rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
+
+.container-menu{
+    max-width: 140rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-menu{
+    font-size: 3rem;
+    font: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+

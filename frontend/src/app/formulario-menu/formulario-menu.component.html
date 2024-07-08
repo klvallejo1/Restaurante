@@ -1,0 +1,28 @@
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()" class="order-form">
+    <!-- Selector de producto -->
+    <mat-form-field appearance="fill">
+        <mat-label>Seleccionar producto</mat-label>
+        <mat-select formControlName="producto">
+            <mat-option *ngFor="let producto of productos" [value]="producto">{{ producto }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Selector de cantidad -->
+    <mat-form-field appearance="fill">
+        <mat-label>Cantidad</mat-label>
+        <mat-select formControlName="cantidad">
+            <mat-option *ngFor="let cantidad of cantidades" [value]="cantidad">{{ cantidad }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Selector de mesa -->
+    <mat-form-field appearance="fill">
+        <mat-label>Mesa</mat-label>
+        <mat-select formControlName="mesa">
+            <mat-option *ngFor="let mesa of mesas" [value]="mesa">{{ mesa }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Botón de ordenar -->
+    <button mat-raised-button color="primary" type="submit">Ordenar</button>
+</form>

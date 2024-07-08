@@ -42,3 +42,16 @@
 section {
     padding: 1rem 5% 6rem;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-menu{
+    font-size: 2rem;
+    font: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
