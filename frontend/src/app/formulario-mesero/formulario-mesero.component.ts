@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CalificacionService } from '../calificacion.service';
 
 @Component({
   selector: 'app-formulario-mesero',
@@ -9,20 +9,39 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class FormularioMeseroComponent {
   ratingForm: FormGroup;
-  meseros: string[] = ['John Serrano', 'Nubia Araujo', 'John Albiño', 'Carlos Andrade'];
+  meseros: string[] = [
+    'John Serrano',
+    'Nubia Araujo',
+    'Johan Albiño',
+    'Carlos Andrade',
+  ];
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private calificacionService: CalificacionService
+  ) {
     this.ratingForm = this.fb.group({
-      mesero: [''],
-      fecha: [''],
-      calificacion: [''],
+      mesero: ['', Validators.required],
+      fecha: ['', Validators.required],
+      calificacion: [null, Validators.required],
       comentario: [''],
     });
   }
 
-  onSubmit() {
+  onSubmit(): void {
     if (this.ratingForm.valid) {
-      console.log(this.ratingForm.value);
+      this.calificacionService
+        .enviarCalificacion(this.ratingForm.value)
+        .subscribe(
+          (response) => {
+            console.log('Calificación enviada con éxito', response);
+            alert('Su calificación ha sido enviada correctamente');
+          },
+          (error) => {
+            console.error('Error al enviar la calificación', error);
+            alert('Su calificación NO ha sido enviada correctamente');
+          }
+        );
     }
   }
 }
