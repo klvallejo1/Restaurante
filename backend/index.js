@@ -5,8 +5,10 @@ const menuRoutes = require('./routes/menuRoutes');
 const pedidosRouter = require('./routes/pedidos');
 const calificacionRoutes = require('./routes/calificacionRoutes');
 const meseroRoutes = require('./routes/meseroRoutes');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
@@ -14,6 +16,7 @@ mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: t
 
 // Middleware para parsear JSON
 app.use(express.json());
+
 
 app.use('/api/', menuRoutes);
 app.use('/api/', pedidosRouter);

@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PedidoService {
   private apiUrl = 'http://localhost:5000/api/pedidos';
+  private apiUrlMenu = 'http://localhost:5000/api';
 
   constructor(private http: HttpClient) {}
 
@@ -17,6 +18,6 @@ export class PedidoService {
   }
 
   getMenu(): Observable<MenuItem[]> {
-    return this.http.get<MenuItem[]>(`${this.apiUrl}/menu`);
+    return this.http.get<MenuItem[]>(`${this.apiUrlMenu}/menu`);
   }
 }

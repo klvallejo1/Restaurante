@@ -20,8 +20,8 @@ export class FormularioMeseroComponent implements OnInit {
     this.ratingForm = this.fb.group({
       mesero: ['', Validators.required],
       fecha: ['', Validators.required],
-      calificacion: [null, Validators.required],
-      comentario: [''],
+      calificacion: ['', Validators.required],
+      comentario: ['']
     });
   }
 
@@ -40,20 +40,26 @@ export class FormularioMeseroComponent implements OnInit {
     );
   }
 
-  onSubmit(): void {
+  onSubmit() {
     if (this.ratingForm.valid) {
-      this.calificacionService
-        .enviarCalificacion(this.ratingForm.value)
-        .subscribe(
-          (response) => {
-            console.log('Calificación enviada con éxito', response);
-            alert('Su calificación ha sido enviada correctamente');
-          },
-          (error) => {
-            console.error('Error al enviar la calificación', error);
-            alert('Su calificación NO ha sido enviada correctamente');
-          }
-        );
+      const calificacionData = this.ratingForm.value;
+      
+      calificacionData.fecha = new Date(calificacionData.fecha).toISOString();
+      
+      this.calificacionService.enviarCalificacion(calificacionData).subscribe(
+        response => {
+          alert('Calificación enviada con éxito');
+          console.log('Calificación enviada con éxito', response);
+          this.ratingForm.reset();
+        },
+        error => {
+          alert('No se ha enviado tu calificacion, hazlo de nuevo');
+          console.error('Error al enviar la calificación', error);
+        }
+      );
+    } else {
+      alert('Formulario invalido');
+      console.log('Formulario inválido');
     }
   }
 }
