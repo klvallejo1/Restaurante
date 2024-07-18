@@ -4,6 +4,7 @@ const config = require('./config/config');
 const menuRoutes = require('./routes/menuRoutes');
 const pedidosRouter = require('./routes/pedidos');
 const calificacionRoutes = require('./routes/calificacionRoutes');
+const meseroRoutes = require('./routes/meseroRoutes');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use('/api/', menuRoutes);
 app.use('/api/', pedidosRouter);
 app.use('/api/', calificacionRoutes);
+app.use('/api', meseroRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

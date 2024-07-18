@@ -1,5 +1,3 @@
-// controllers/calificacionesController.js
-
 const Calificacion = require('../models/Calificacion');
 
 exports.crearCalificacion = async (req, res) => {
