@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "668b526690e2951f53e43f6d"
+  },
+  "numero": 1,
+  "producto": "Pizza Clásica",
+  "descripcion": "8 porciones. Sabor y frescura original. Peperoni y harto queso.",
+  "precio": 6.99,
+  "cantidad": 21,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b526e90e2951f53e43f6f"
+  },
+  "numero": 2,
+  "producto": "Pizza Mariana",
+  "descripcion": "8 porciones. Primavera, verano, otoño y primavera. Lo mejor de 4 mundos.",
+  "precio": 8.99,
+  "cantidad": 21,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b52d790e2951f53e43f72"
+  },
+  "numero": 3,
+  "producto": "Pizza Napolinata",
+  "descripcion": "8 porciones. Masa fina y elástica. Especialidad Tradicional Garantizada por la Unión Europea.",
+  "precio": 7.99,
+  "cantidad": 10,
+  "disponibilidad": "No",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b5646c599687734db995b"
+  },
+  "numero": 4,
+  "producto": "Pizza Margarita",
+  "descripcion": "10 porciones. Doble masa, albahaca y sabor.",
+  "precio": 12.99,
+  "cantidad": 5,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b565dc599687734db995d"
+  },
+  "numero": 5,
+  "producto": "Pizza Queso",
+  "descripcion": "10 porciones. El doble de sabor",
+  "precio": 10.99,
+  "cantidad": 5,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b5671c599687734db995f"
+  },
+  "numero": 6,
+  "producto": "Pizza Vegana",
+  "descripcion": "10 porciones. Pizza sin proteina. Puro vegetalZzZ.",
+  "precio": 5.99,
+  "cantidad": 5,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b56afc599687734db9962"
+  },
+  "numero": 7,
+  "producto": "Pizza Hawaiana",
+  "descripcion": "10 porciones. Pizza con piña. Ideal para gente con gustos raros",
+  "precio": 7.99,
+  "cantidad": 20,
+  "disponibilidad": "Si",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b5701c599687734db9965"
+  },
+  "numero": 8,
+  "producto": "Ensalada Rusa",
+  "descripcion": "Para 2 personas. Ensalada rica en proteinas",
+  "precio": 4.99,
+  "cantidad": 13,
+  "disponibilidad": "No",
+  "__v": 0
+}]

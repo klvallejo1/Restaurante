@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6698930b176402bc7ce8b8a4"
+  },
+  "mesero": "Carla Delgado",
+  "fecha": {
+    "$date": "2024-07-17T05:00:00.000Z"
+  },
+  "calificacion": 3,
+  "comentario": "Descente",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66989377176402bc7ce8b8aa"
+  },
+  "mesero": "Danna Cevallos",
+  "fecha": {
+    "$date": "2024-07-17T05:00:00.000Z"
+  },
+  "calificacion": 3,
+  "comentario": "La mejor!",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669893f5176402bc7ce8b8ac"
+  },
+  "mesero": "John Serrano",
+  "fecha": {
+    "$date": "2024-07-16T05:00:00.000Z"
+  },
+  "calificacion": 1,
+  "comentario": "Lo peor de lo peor",
+  "__v": 0
+}]

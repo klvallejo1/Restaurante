@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6698878b8ce053b3066eb228"
+  },
+  "name": "Monica Palacios",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669887938ce053b3066eb22a"
+  },
+  "name": "Carla Delgado",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669887998ce053b3066eb22c"
+  },
+  "name": "John Serrano",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669887a08ce053b3066eb22e"
+  },
+  "name": "Danna Cevallos",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669887ad8ce053b3066eb230"
+  },
+  "name": "Mia Malkova",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669887b78ce053b3066eb232"
+  },
+  "name": "Eva Elfie",
+  "__v": 0
+}]
