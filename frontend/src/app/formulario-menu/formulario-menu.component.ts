@@ -38,6 +38,7 @@ export class FormularioMenuComponent implements OnInit {
       this.orderService.createOrder(this.orderForm.value).subscribe(
         (response) => {
           console.log('Pedido creado:', response);
+          alert('Pedido creado correctamente');
         },
         (error) => {
           console.error('Error al crear el pedido:', error);

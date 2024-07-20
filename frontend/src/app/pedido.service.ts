@@ -14,7 +14,7 @@ export class PedidoService {
 
   // Método para realizar un nuevo pedido
   createOrder(order: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/pedidos`, order);
+    return this.http.post(`${this.apiUrl}`, order);
   }
 
   getMenu(): Observable<MenuItem[]> {
